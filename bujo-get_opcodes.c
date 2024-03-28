@@ -1,5 +1,4 @@
 #include "monty.h"
-
 /**
  * bujo_get_opcodes - Parses the instruction with the function.
  * @input: type pointer extern var char
@@ -49,6 +48,7 @@ int bujo_get_opcodes(char *input, stack_t **stack, unsigned int line_number)
 		}
 	}
 	if (indicatorFlag == 0)
-		unknown_instruction_error(input, line_number);
+		unknown_instruction_error(input,
+				line_number);
 	return (0);
 }

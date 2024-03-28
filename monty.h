@@ -47,13 +47,13 @@ typedef struct instruction_s
 } instruction_t;
 
 /**
- * GLOBAL - struct with variable globals
- * @input: integer
+ * struct GLOBAL - struct with variable globals
+ * @int_input: integer
  * @fd: points to the previous element of the stack (or queue)
  * @buffer: points to the next element of the stack (or queue)
- *
+ * @mode: checks for the mode of entry. Queue or Stack
  * Description: doubly linked list node structure
- * for stack, queues, LIFO, FIFO Holberton project
+ * for stack, queues, LIFO, FIFO
  */
 typedef struct GLOBAL
 {
@@ -90,7 +90,7 @@ stack_t *create_nodestack_end(stack_t **head, int n);
 stack_t *add_newNode(stack_t **head, int n);
 
 /*The bujo_op_func and other helper functions*/
-int bujo_isdigit();
+int bujo_isdigit(void);
 void bujo_push(stack_t **stack, unsigned int line_number);
 void bujo_pall(stack_t **stack, unsigned int line_number);
 void bujo_pop(stack_t **stack, unsigned int line_number);
