@@ -1,4 +1,4 @@
-i#include "monty.h"
+#include "monty.h"
 
 /**
  * bujo_pchar - print the char value of the first element
